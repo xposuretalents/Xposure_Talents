@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Events - XposureTalents</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-hero">
+    <div class="pulse"></div>
+    <nav class="site-nav container">
+      
+      <div id="mainMenu" class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+    </nav>
+    <div class="hero-content container">
+      
+      <p class="lead">Connecting artists with stages, media and audiences. Explore our roster, events, gallery and booking options.</p>
+    </div>
+  </header>
+
+  <main class="main container">
+    
+<section class="reveal" class="card reveal">
+  <h2 class="section-title">Events</h2>
+  <p class="kicker">Filter upcoming, past and present events</p>
+  <div style="display:flex;gap:.75rem;align-items:center;margin:1rem 0">
+    <label for="eventFilter" style="min-width:90px">Show:</label>
+    <select id="eventFilter">
+      <option value="upcoming" selected>Upcoming</option>
+      <option value="past">Past</option>
+      <option value="all">All</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <div class="event" data-status="upcoming">
+      <div><strong>Rooftop Beats</strong><div style="opacity:.8">Aug 15, 2025 — New York, NY</div></div>
+      <a href="#" style="opacity:.9">Details</a>
+    </div>
+    <div class="event" data-status="upcoming" style="margin-top:.5rem">
+      <div><strong>Indie Night</strong><div style="opacity:.8">Sep 03, 2025 — Los Angeles, CA</div></div>
+      <a href="#" style="opacity:.9">Details</a>
+    </div>
+    <div class="event" data-status="past" style="margin-top:.5rem">
+      <div><strong>Summer Live Series 2024</strong><div style="opacity:.8">Jul 20, 2024 — Chicago, IL</div></div>
+      <a href="#" style="opacity:.9">Details</a>
+    </div>
+    <div class="event" data-status="past" style="margin-top:.5rem">
+      <div><strong>Festival Opening</strong><div style="opacity:.8">May 02, 2024 — Austin, TX</div></div>
+      <a href="#" style="opacity:.9">Details</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>
+        <div class="kicker">XposureTalents</div>
+        <div class="footer-note">Elevating artists. Building connections. Creating impact.</div>
+      </div>
+      <div class="socials">
+        <a href="#" title="Instagram" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.2"/></svg></a>
+        <a href="#" title="Facebook" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 3h3v4h-3v14h-5V7H9V3h3V1C11 0 15 0 15 0v3z" fill="#fff" opacity="0.9"/></svg></a>
+        <a href="#" title="TikTok" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 5v8a4 4 0 1 0 4-4V5h2a6 6 0 1 1-6 6V5z" fill="#fff" opacity="0.9"/></svg></a>
+        <a href="#" title="YouTube" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5zM10 9v6l5-3-5-3z" fill="#fff" opacity="0.9"/></svg></a>
+        <a href="#" title="X" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M20 5L9 16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M9 5l11 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox"><button style="position:absolute;right:2rem;top:2rem;background:transparent;border:0;color:#fff;font-size:1.2rem">✕</button><img src="" alt="lightbox image"></div>
+  <script src="script.js"></script>
+</body>
+</html>
