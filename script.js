@@ -70,31 +70,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   });
 });
-
-
-// Scroll reveal effect
-window.addEventListener("scroll", () => {
-    const reveals = document.querySelectorAll(".reveal");
-    for (let i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
-        }
-    }
-});
-
-
-// Hamburger menu toggle
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
-    if (hamburger) {
-        hamburger.addEventListener("click", () => {
-            nav.classList.toggle("active");
-        });
-    }
-});
