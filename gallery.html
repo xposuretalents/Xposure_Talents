@@ -1,69 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gallery - XposureTalents</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View photos and moments from XposureTalents events, performances, and behind-the-scenes with our artists.">
+  <title>Gallery - XposureTalents | Music Talent Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-hero">
-    <div class="pulse"></div>
+
+  <header class="site-header">
     <nav class="site-nav container">
-      <div class="brand"><span>&nbsp;</span></div>
-      <div id="mainMenu" class="menu">
+      <div class="brand">
+        <img src="logo.jpeg" alt="XposureTalents Logo" class="brand-logo">
+        XposureTalents
+      </div>
+      <div class="menu" id="mainMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="showcase.html">Showcase</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="events.html">Events</a>
         <a href="artists.html">Artists</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="showcase.html">Showcase</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </nav>
+  </header>
+
+  <section class="site-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
     <div class="hero-content container">
-      <h1>&nbsp;</h1>
-      <p class="lead">&nbsp;</p>
-      <p class="lead">Connecting artists with stages, media and audiences. Explore our roster, events, gallery and booking options.</p>
+      <h1>Gallery</h1>
+      <p class="lead">Explore moments from our live performances, artist sessions, and behind-the-scenes experiences.</p>
     </div>
-	</header>  
+  </section>
 
   <main class="main container">
-    
-  <section class="card reveal">
-  <h2 class="section-title">Gallery</h2>
-  <p class="kicker">Photos & Clips</p>
-  <div class="gallery-grid" style="margin-top:1rem">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 1">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 2">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 3">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 4">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 5">
-    <img src="logo.jpeg" data-large="logo.jpeg" alt="photo 6">
-  </div>
-  <p style="opacity:.7;margin-top:.75rem">Click any image to view larger.</p>
-</section>
 
-</main>
+    <section class="reveal">
+      <div class="kicker">Visual Stories</div>
+      <h2 class="section-title">Captured Moments</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">Click any image to view larger</p>
 
-  <footer class="site-footer container">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <div>
-        <div class="kicker">Xposure Talents</div>
-        <div class="footer-note">Elevating artists. Building connections. Creating impact.</div>
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Live performance moment" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Summer Live Series 2024</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Artist backstage" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Behind the scenes</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Crowd at festival" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Festival atmosphere</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Intimate venue performance" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Intimate venue session</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Artist soundcheck" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Soundcheck preparations</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Stage lighting" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Stage production</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Artist with fans" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Meeting the fans</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Recording session" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Studio recording</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Group performance" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Collaborative performance</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Acoustic set" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Acoustic showcase</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Festival main stage" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Main stage performance</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="logo.jpeg" alt="Artist portrait" data-large="logo.jpeg" loading="lazy">
+          <div class="gallery-caption">Artist portrait session</div>
+        </div>
+
       </div>
-      <div class="socials">
-        <a href="#" title="Instagram" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.2"/></svg></a>
-        <a href="#" title="Facebook" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 3h3v4h-3v14h-5V7H9V3h3V1C11 0 15 0 15 0v3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="TikTok" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 5v8a4 4 0 1 0 4-4V5h2a6 6 0 1 1-6 6V5z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="YouTube" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5zM10 9v6l5-3-5-3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="X" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M20 5L9 16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M9 5l11 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+    </section>
+
+    <section class="card reveal mt-3">
+      <div class="kicker">Stay Connected</div>
+      <h2 class="section-title">Follow Our Journey</h2>
+      <p>Want to see more? Follow us on social media for daily updates, behind-the-scenes content, and exclusive artist features.</p>
+      <div class="footer-socials mt-2">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="18" cy="6" r="1.5"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+        <a href="https://spotify.com" target="_blank" rel="noopener" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>XposureTalents</h4>
+          <p>Elevating artists. Building connections. Creating impact.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1.5"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://spotify.com" target="_blank" rel="noopener" aria-label="Spotify">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="artists.html">Our Artists</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="showcase.html">Showcase</a>
+            <a href="mailto:info@xposuretalents.com">Email Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 XposureTalents. All rights reserved.</p>
+        <p>Connecting artists with stages, media, and audiences.</p>
       </div>
     </div>
   </footer>
 
-  <div id="lightbox" class="lightbox"><button style="position:absolute;right:2rem;top:2rem;background:transparent;border:0;color:#fff;font-size:1.2rem">✕</button><img src="" alt="lightbox image"></div>
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="">
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

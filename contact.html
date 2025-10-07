@@ -1,79 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact - XposureTalents</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact XposureTalents for artist bookings, representation inquiries, or general questions. We're here to help connect you with exceptional talent.">
+  <title>Contact Us - XposureTalents | Music Talent Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-hero">
-    <div class="pulse"></div>
+
+  <header class="site-header">
     <nav class="site-nav container">
-      <div class="brand"></div>
-      <div id="mainMenu2" class="menu"> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="showcase.html">Showcase</a> <a href="gallery.html">Gallery</a> <a href="events.html">Events</a> <a href="artists.html">Artists</a> <a href="contact.html">Contact</a> </div>
+      <div class="brand">
+        <img src="logo.jpeg" alt="XposureTalents Logo" class="brand-logo">
+        XposureTalents
+      </div>
+      <div class="menu" id="mainMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="artists.html">Artists</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </nav>
-    <div class="hero-content container">
-      <h1>&nbsp;</h1>
-      <p class="lead">&nbsp;</p>
-      <p class="lead">Connecting artists with stages, media and audiences. Explore our roster, events, gallery and booking options.</p>
-    </div>
   </header>
 
+  <section class="site-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content container">
+      <h1>Get in Touch</h1>
+      <p class="lead">Whether you're looking to book an artist, seeking representation, or have questions about our services, we'd love to hear from you.</p>
+    </div>
+  </section>
+
   <main class="main container">
-    
-  <section class="card reveal">
-  <h2 class="section-title">Contact & Booking</h2>
-  <p class="kicker">Get in touch or send your press kit</p>
 
-  <!-- Netlify-ready booking form -->
-  <form id="bookingForm" name="bookingForm" method="POST" data-netlify="true" enctype="multipart/form-data" class="card" style="display:flex;flex-direction:column;gap:.75rem">
-    <input type="hidden" name="form-name" value="bookingForm">
-    <div class="form-row">
-      <input name="name" placeholder="Your name" required>
-      <input name="email" placeholder="Email address" required type="email">
-    </div>
-    <div class="form-row">
-      <input name="phone" placeholder="Phone">
-      <input name="event_date" placeholder="Event date (YYYY-MM-DD)" type="date">
-    </div>
-    <select name="service" required>
-      <option value="">Select service</option>
-      <option>Booking / Gig</option>
-      <option>Press Kit / Media</option>
-      <option>General Inquiry</option>
-    </select>
-    <textarea name="message" rows="6" placeholder="Message" required></textarea>
-    <div style="display:flex;gap:.75rem;align-items:center;flex-wrap:wrap">
-      <label style="background:rgba(255,255,255,0.02);padding:.6rem;border-radius:8px;display:inline-block;cursor:pointer">
-        <input type="file" name="presskit" accept=".zip,.pdf,.jpg,.png,.mp3" style="display:none"> Attach press kit (zip/pdf/images/audio)
-        </label>
-      <button class="btn" type="submit">Send request</button>
-      <div style="opacity:.7">Or email: <a href="mailto:bookings@xposuretalents.com">Xposuretalents@gmail,com</a></div>
-    </div>
-  </form>
-</section>
+    <section class="card reveal">
+      <div class="kicker">Contact Us</div>
+      <h2 class="section-title">Let's Start a Conversation</h2>
 
-</main>
+      <form id="bookingForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="bot-field">
 
-  <footer class="site-footer container">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <div>
-        <div class="kicker">Xposure Talents</div>
-        <div class="footer-note">Elevating artists. Building connections. Creating impact.</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Inquiry Type *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select an option</option>
+              <option value="booking">Artist Booking</option>
+              <option value="representation">Artist Representation</option>
+              <option value="venue">Venue Partnership</option>
+              <option value="media">Media Inquiry</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message *</label>
+          <textarea id="message" name="message" required placeholder="Tell us more about your inquiry..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+        <p class="mt-2" style="color: var(--text-muted); font-size: 0.9rem;">
+          Or email us directly at <a href="mailto:info@xposuretalents.com" style="color: var(--neon-purple);">Xposuretalents@gmail.com</a>
+        </p>
+      </form>
+    </section>
+
+    <div class="grid grid-3 mt-3">
+      <div class="card reveal">
+        <div class="kicker">Booking Inquiries</div>
+        <h3>Book an Artist</h3>
+        <p>Interested in booking one of our talented artists for your venue or event? We work with spaces of all sizes.</p>
       </div>
-      <div class="socials">
-        <a href="#" title="Instagram" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.2"/></svg></a>
-        <a href="#" title="Facebook" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 3h3v4h-3v14h-5V7H9V3h3V1C11 0 15 0 15 0v3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="TikTok" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 5v8a4 4 0 1 0 4-4V5h2a6 6 0 1 1-6 6V5z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="YouTube" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5zM10 9v6l5-3-5-3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="X" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M20 5L9 16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M9 5l11 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+
+      <div class="card reveal">
+        <div class="kicker">Artist Representation</div>
+        <h3>Join Our Roster</h3>
+        <p>Are you an artist looking for representation? We're always on the lookout for exceptional talent to add to our roster.</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="kicker">Media & Press</div>
+        <h3>Media Inquiries</h3>
+        <p>Press, interviews, or media collaborations? We're happy to connect you with our artists and team.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>XposureTalents</h4>
+          <p>Elevating artists. Building connections. Creating impact.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1.5"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://spotify.com" target="_blank" rel="noopener" aria-label="Spotify">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="artists.html">Our Artists</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="showcase.html">Showcase</a>
+            <a href="mailto:info@xposuretalents.com">Email Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 XposureTalents. All rights reserved.</p>
+        <p>Connecting artists with stages, media, and audiences.</p>
       </div>
     </div>
   </footer>
 
-  <div id="lightbox" class="lightbox"><button style="position:absolute;right:2rem;top:2rem;background:transparent;border:0;color:#fff;font-size:1.2rem">✕</button><img src="" alt="lightbox image"></div>
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="">
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

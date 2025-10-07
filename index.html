@@ -1,72 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Home - XposureTalents</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XposureTalents - Premier music talent agency connecting artists with stages, media, and audiences. Discover emerging talent and book exceptional artists.">
+  <title>Home - XposureTalents | Music Talent Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-hero">
-    <div class="pulse"></div>
+
+  <header class="site-header">
     <nav class="site-nav container">
-      <div class="brand"><span>&nbsp;</span></div>
-      <div id="mainMenu" class="menu">
+      <div class="brand">
+        <img src="logo.jpeg" alt="XposureTalents Logo" class="brand-logo">
+        XposureTalents
+      </div>
+      <div class="menu" id="mainMenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="showcase.html">Showcase</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="events.html">Events</a>
         <a href="artists.html">Artists</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="showcase.html">Showcase</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </nav>
+  </header>
+
+  <section class="site-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
     <div class="hero-content container">
-      <h1>&nbsp;</h1>
-      <p class="lead">&nbsp;</p>
-      <p class="lead">Connecting artists with stages, media and audiences. Explore our roster, events, gallery and booking options.</p>
+      <h1>Elevating Artists, Building Connections</h1>
+      <p class="lead">Premier music talent agency connecting exceptional artists with stages, media platforms, and passionate audiences worldwide.</p>
+      <div class="hero-cta">
+        <a href="artists.html" class="btn btn-primary">Explore Our Roster</a>
+        <a href="contact.html" class="btn btn-secondary">Book an Artist</a>
+      </div>
     </div>
-	</header>
+  </section>
 
   <main class="main container">
-    
-<section class="card reveal">
-  <div class="kicker">Mission</div>
-  <h2 class="section-title">Xposure Talents Mission Statement</h2>
-  <p>At Xposure Talents, we are passionate about music and the power of connecting artists with transformative opportunities. Our mission is to elevate the careers of musicians and creatives by providing exceptional representation and support. We are dedicated to fostering relationships with live venues and media platforms, ensuring our artists gain the exposure they deserve. With a deep love for music and a commitment to nurturing talent, we strive to turn passion into success, creating a vibrant community where creativity thrives and new connections are formed. Together, let's take your music to the next level.</p>
-</section>
 
-<section class="grid">
-  <div class="card reveal">
-    <h3 class="kicker">Featured Artist</h3>
-    <p>Spotlight on our artist of the month — curated showcases and new releases.</p>
-  </div>
-  <div class="card reveal">
-    <h3 class="kicker">Upcoming Events</h3>
-    <p><a href="events.html">See all events</a></p>
-  </div>
-</section>
+    <section class="card reveal">
+      <div class="kicker">Our Mission</div>
+      <h2 class="section-title">Connecting Passion with Opportunity</h2>
+      <p>At XposureTalents, we're passionate about music and the power it has to transform careers and connect communities. Our mission is to elevate emerging and established artists by providing exceptional representation, strategic career guidance, and access to premier venues and media platforms. We believe in nurturing talent, fostering meaningful relationships, and creating opportunities that turn artistic passion into sustainable success.</p>
+    </section>
+
+    <div class="grid grid-2">
+      <div class="card reveal">
+        <div class="kicker">Featured Artists</div>
+        <h3 class="section-title">Discover Exceptional Talent</h3>
+        <p>Our diverse roster spans indie, electronic, jazz, hip-hop, and more. Each artist brings unique vision and exceptional artistry to every performance.</p>
+        <a href="artists.html" class="btn btn-primary btn-small mt-2">View All Artists</a>
+      </div>
+
+      <div class="card reveal">
+        <div class="kicker">Upcoming Events</div>
+        <h3 class="section-title">Experience Live Music</h3>
+        <p>From intimate venues to major festivals, our artists perform across the country. Join us for unforgettable live experiences.</p>
+        <a href="events.html" class="btn btn-primary btn-small mt-2">See All Events</a>
+      </div>
+    </div>
+
+    <section class="card reveal">
+      <div class="kicker">Services</div>
+      <h2 class="section-title">What We Offer</h2>
+      <div class="grid grid-3 mt-2">
+        <div class="card">
+          <h4>Artist Development</h4>
+          <p>Strategic career planning, brand building, and creative direction to help artists reach their full potential.</p>
+        </div>
+        <div class="card">
+          <h4>Booking & Events</h4>
+          <p>Premium venue partnerships and tour logistics management for seamless live experiences.</p>
+        </div>
+        <div class="card">
+          <h4>Media & Promotion</h4>
+          <p>Playlist placement, radio features, and strategic media campaigns to maximize exposure.</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer class="site-footer container">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <div>
-        <div class="kicker">Xposure Talents</div>
-        <div class="footer-note">Elevating artists. Building connections. Creating impact.</div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>XposureTalents</h4>
+          <p>Elevating artists. Building connections. Creating impact.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1.5"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://spotify.com" target="_blank" rel="noopener" aria-label="Spotify">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="artists.html">Our Artists</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="showcase.html">Showcase</a>
+            <a href="mailto:info@xposuretalents.com">Email Us</a>
+          </div>
+        </div>
       </div>
-      <div class="socials">
-        <a href="#" title="Instagram" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.2"/></svg></a>
-        <a href="#" title="Facebook" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 3h3v4h-3v14h-5V7H9V3h3V1C11 0 15 0 15 0v3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="TikTok" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 5v8a4 4 0 1 0 4-4V5h2a6 6 0 1 1-6 6V5z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="YouTube" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5zM10 9v6l5-3-5-3z" fill="#fff" opacity="0.9"/></svg></a>
-        <a href="#" title="X" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M20 5L9 16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><path d="M9 5l11 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 XposureTalents. All rights reserved.</p>
+        <p>Connecting artists with stages, media, and audiences.</p>
       </div>
     </div>
   </footer>
 
-  <div id="lightbox" class="lightbox"><button style="position:absolute;right:2rem;top:2rem;background:transparent;border:0;color:#fff;font-size:1.2rem">✕</button><img src="" alt="lightbox image"></div>
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="">
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
