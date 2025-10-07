@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Rooftop Beats",
+    "date": "August 15, 2025",
+    "location": "The Sky Lounge, New York, NY",
+    "image": "logo.jpeg",
+    "description": "Luna Vibe performs an intimate rooftop session with stunning city views. Limited capacity.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Electric Dreams Festival",
+    "date": "September 3, 2025",
+    "location": "Downtown Arena, Los Angeles, CA",
+    "image": "logo.jpeg",
+    "description": "Neon Pulse headlines the electronic music festival of the summer. Three-day extravaganza.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Smooth Jazz Night",
+    "date": "September 12, 2025",
+    "location": "Blue Note Jazz Club, Chicago, IL",
+    "image": "logo.jpeg",
+    "description": "Soul Collective brings sophisticated jazz and soul to the historic Blue Note venue.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Street Beats",
+    "date": "October 5, 2025",
+    "location": "Underground Stage, Atlanta, GA",
+    "image": "logo.jpeg",
+    "description": "Urban Flow delivers hard-hitting hip-hop in Atlanta's premier underground venue.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Acoustic Sessions",
+    "date": "October 22, 2025",
+    "location": "The Listening Room, Nashville, TN",
+    "image": "logo.jpeg",
+    "description": "Amber Waves performs stripped-down acoustic versions in Music City's iconic venue.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Sound Lab",
+    "date": "November 8, 2025",
+    "location": "Experimental Space, Portland, OR",
+    "image": "logo.jpeg",
+    "description": "Echo Chamber presents an immersive experimental audio experience with visual projections.",
+    "status": "upcoming"
+  },
+  {
+    "title": "Summer Live Series 2024",
+    "date": "July 20, 2024",
+    "location": "Millennium Park, Chicago, IL",
+    "image": "logo.jpeg",
+    "description": "Our artists performed across six cities featuring emerging talents from our diverse roster.",
+    "status": "past"
+  },
+  {
+    "title": "Spring Festival Opening",
+    "date": "May 2, 2024",
+    "location": "Zilker Park, Austin, TX",
+    "image": "logo.jpeg",
+    "description": "Multiple artists opened the spring festival season with incredible performances.",
+    "status": "past"
+  }
+]

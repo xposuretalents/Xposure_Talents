@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Luna Vibe",
+    "genre": "Indie / Alternative",
+    "image": "logo.jpeg",
+    "upcoming": "Rooftop Beats - Aug 15, NYC",
+    "social": {
+      "instagram": "https://instagram.com",
+      "youtube": "https://youtube.com"
+    }
+  },
+  {
+    "name": "Neon Pulse",
+    "genre": "Electronic / Synthwave",
+    "image": "logo.jpeg",
+    "upcoming": "Electric Dreams Festival - Sep 3, LA",
+    "social": {
+      "instagram": "https://instagram.com",
+      "spotify": "https://spotify.com"
+    }
+  },
+  {
+    "name": "Soul Collective",
+    "genre": "Jazz / Soul / R&B",
+    "image": "logo.jpeg",
+    "upcoming": "Smooth Jazz Night - Sep 12, Chicago",
+    "social": {
+      "instagram": "https://instagram.com",
+      "youtube": "https://youtube.com"
+    }
+  },
+  {
+    "name": "Urban Flow",
+    "genre": "Hip-Hop / Rap",
+    "image": "logo.jpeg",
+    "upcoming": "Street Beats - Oct 5, Atlanta",
+    "social": {
+      "instagram": "https://instagram.com",
+      "spotify": "https://spotify.com"
+    }
+  },
+  {
+    "name": "Amber Waves",
+    "genre": "Folk / Acoustic",
+    "image": "logo.jpeg",
+    "upcoming": "Acoustic Sessions - Oct 22, Nashville",
+    "social": {
+      "instagram": "https://instagram.com",
+      "youtube": "https://youtube.com"
+    }
+  },
+  {
+    "name": "Echo Chamber",
+    "genre": "Experimental / Ambient",
+    "image": "logo.jpeg",
+    "upcoming": "Sound Lab - Nov 8, Portland",
+    "social": {
+      "instagram": "https://instagram.com",
+      "spotify": "https://spotify.com"
+    }
+  }
+]
